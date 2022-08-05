@@ -74,25 +74,6 @@ if __name__ == '__main__':
             contextualizer.save('checkpoints/contextualizer_epoch_{}.pt'.format(metrics['epoch']))
 
     def simple_checkpoint(metrics):
-        if not args.no_save:
-            tqdm.tqdm.write("Saving best...")
-            torch.save(process.best)
-            encoder.save('checkpoints/encoder.pt')
-            contextualizer.save('checkpoints/contextualizer.pt')
-
-    # Slower learning rate for the encoder
-    process.set_optimizer(torch.optim.Adam(process.parameters(), **experiment.optimizer_params))
-    process.add_batch_transform(RandomTemporalCrop(max_crop_frac=experiment.augmentation_params.batch_crop_frac))
-
-    tqdm.tqdm.write(process.description(experiment.global_samples))
-
-    def epoch_checkpoint(metrics):
-        if not args.no_save and not args.no_save_epochs:
-            tqdm.tqdm.write("Saving...")
-            encoder.save('checkpoints/encoder_epoch_{}.pt'.format(metrics['epoch']))
-            contextualizer.save('checkpoints/contextualizer_epoch_{}.pt'.format(metrics['epoch']))
-
-    def simple_checkpoint(metrics):
         if metrics is not None and metrics['Accuracy'] > experiment.mask_threshold and \
                 metrics['Mask_pct'] < experiment.mask_pct_max:
             process.mask_span = int(process.mask_span * experiment.mask_inflation)

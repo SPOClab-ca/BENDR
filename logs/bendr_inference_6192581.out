@@ -1,0 +1,31 @@
+---------------------------------------
+Begin Slurm Prolog: Oct-11-2026 19:41:19
+Job ID:    6192581
+User ID:   rkrishnan72
+Account:   coc
+Job name:  bendr-inference-smoke-test
+Partition: coc-gpu
+QOS:       coc-ice
+---------------------------------------
+Running BENDR inference smoke test on PACE GPU node...
+Initializing BENDR inference smoke test...
+Using device: cuda
+Receptive field: 143 samples | Downsampled by 96 | Overlap of 47 samples | 10 encoded samples/trial
+Loading pretrained modules...
+Note on loading (expected if paths are placeholders yet): [Errno 2] No such file or directory: 'path/to/encoder_weights.pt'
+Input EEG tensor shape: torch.Size([2, 20, 1000])
+Model forward output features shape: torch.Size([2, 512])
+Smoke test execution completed successfully!
+Job complete.
+---------------------------------------
+Begin Slurm Epilog: Oct-11-2026 19:41:33
+Job ID:        6192581
+User ID:       rkrishnan72
+Account:       coc
+Job name:      bendr-inference-smoke-test
+Resources:     cpu=4,gres/gpu:l40s=1,mem=16G,node=1
+Rsrc Used:     cput=00:01:04,vmem=0,walltime=00:00:16,mem=1071032K,energy_used=0
+Partition:     coc-gpu
+QOS:           coc-ice
+Nodes:         atl1-1-03-004-21-0
+---------------------------------------

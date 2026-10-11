@@ -1,0 +1,15 @@
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+Traceback (most recent call last):
+  File "/home/hice1/rkrishnan72/projects/bendr-inference/BENDR/infer_smoke_test.py", line 2, in <module>
+    from dn3_ext import BENDRClassification
+  File "/home/hice1/rkrishnan72/projects/bendr-inference/BENDR/dn3_ext.py", line 14, in <module>
+    from dn3.trainable.processes import StandardClassification, BaseProcess
+  File "/home/hice1/rkrishnan72/.conda/envs/bendr-env/lib/python3.10/site-packages/dn3/__init__.py", line 1, in <module>
+    from . import configuratron
+  File "/home/hice1/rkrishnan72/.conda/envs/bendr-env/lib/python3.10/site-packages/dn3/configuratron/__init__.py", line 1, in <module>
+    from .config import ExperimentConfig, DatasetConfig
+  File "/home/hice1/rkrishnan72/.conda/envs/bendr-env/lib/python3.10/site-packages/dn3/configuratron/config.py", line 3, in <module>
+    from yamlinclude import YamlIncludeConstructor
+ModuleNotFoundError: No module named 'yamlinclude'

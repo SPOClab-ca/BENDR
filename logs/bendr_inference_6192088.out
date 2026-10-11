@@ -1,0 +1,23 @@
+---------------------------------------
+Begin Slurm Prolog: Oct-11-2026 19:21:13
+Job ID:    6192088
+User ID:   rkrishnan72
+Account:   coc
+Job name:  bendr-inference-smoke-test
+Partition: coc-gpu
+QOS:       coc-ice
+---------------------------------------
+Running BENDR inference smoke test on PACE GPU node...
+Job complete.
+---------------------------------------
+Begin Slurm Epilog: Oct-11-2026 19:21:20
+Job ID:        6192088
+User ID:       rkrishnan72
+Account:       coc
+Job name:      bendr-inference-smoke-test
+Resources:     cpu=4,gres/gpu:l40s=1,mem=16G,node=1
+Rsrc Used:     cput=00:00:36,vmem=0,walltime=00:00:09,mem=230324K,energy_used=0
+Partition:     coc-gpu
+QOS:           coc-ice
+Nodes:         atl1-1-03-004-25-0
+---------------------------------------

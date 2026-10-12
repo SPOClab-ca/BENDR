@@ -1,0 +1,14 @@
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+
+EnvironmentNameNotFound: Could not find conda environment: bendr-env
+You can list all discoverable environments with `conda info --envs`.
+
+
+Traceback (most recent call last):
+  File "/home/hice1/rkrishnan72/projects/bendr-inference/BENDR/infer_smoke_test.py", line 2, in <module>
+    from dn3_ext import BENDRClassification
+  File "/home/hice1/rkrishnan72/projects/bendr-inference/BENDR/dn3_ext.py", line 2, in <module>
+    import mne
+ModuleNotFoundError: No module named 'mne'

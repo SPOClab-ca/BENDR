@@ -1,0 +1,23 @@
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+Traceback (most recent call last):
+  File "/home/hice1/rkrishnan72/projects/bendr-inference/BENDR/infer_smoke_test.py", line 2, in <module>
+    from dn3_ext import BENDRClassification
+  File "/home/hice1/rkrishnan72/projects/bendr-inference/BENDR/dn3_ext.py", line 14, in <module>
+    from dn3.trainable.processes import StandardClassification, BaseProcess
+  File "/home/hice1/rkrishnan72/.conda/envs/bendr-env/lib/python3.10/site-packages/dn3/__init__.py", line 1, in <module>
+    from . import configuratron
+  File "/home/hice1/rkrishnan72/.conda/envs/bendr-env/lib/python3.10/site-packages/dn3/configuratron/__init__.py", line 1, in <module>
+    from .config import ExperimentConfig, DatasetConfig
+  File "/home/hice1/rkrishnan72/.conda/envs/bendr-env/lib/python3.10/site-packages/dn3/configuratron/config.py", line 15, in <module>
+    from dn3.data.dataset import Dataset, RawTorchRecording, EpochTorchRecording, Thinker, DatasetInfo, DumpedDataset
+  File "/home/hice1/rkrishnan72/.conda/envs/bendr-env/lib/python3.10/site-packages/dn3/data/dataset.py", line 8, in <module>
+    from dn3.transforms.preprocessors import Preprocessor
+  File "/home/hice1/rkrishnan72/.conda/envs/bendr-env/lib/python3.10/site-packages/dn3/transforms/preprocessors.py", line 4, in <module>
+    from dn3.transforms.instance import EuclideanAlignmentTransform, EEG_INDS
+  File "/home/hice1/rkrishnan72/.conda/envs/bendr-env/lib/python3.10/site-packages/dn3/transforms/instance.py", line 11, in <module>
+    from dn3.utils import min_max_normalize
+  File "/home/hice1/rkrishnan72/.conda/envs/bendr-env/lib/python3.10/site-packages/dn3/utils.py", line 4, in <module>
+    from collections import Iterable
+ImportError: cannot import name 'Iterable' from 'collections' (/home/hice1/rkrishnan72/.conda/envs/bendr-env/lib/python3.10/collections/__init__.py)

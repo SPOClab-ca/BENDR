@@ -1,0 +1,19 @@
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+Traceback (most recent call last):
+  File "/home/hice1/rkrishnan72/projects/bendr-inference/BENDR/infer_smoke_test.py", line 10, in <module>
+    from dn3_ext import BENDRClassification
+  File "/home/hice1/rkrishnan72/projects/bendr-inference/BENDR/dn3_ext.py", line 14, in <module>
+    from dn3.trainable.processes import StandardClassification, BaseProcess
+  File "/home/hice1/rkrishnan72/.conda/envs/bendr-env/lib/python3.10/site-packages/dn3/__init__.py", line 1, in <module>
+    from . import configuratron
+  File "/home/hice1/rkrishnan72/.conda/envs/bendr-env/lib/python3.10/site-packages/dn3/configuratron/__init__.py", line 1, in <module>
+    from .config import ExperimentConfig, DatasetConfig
+  File "/home/hice1/rkrishnan72/.conda/envs/bendr-env/lib/python3.10/site-packages/dn3/configuratron/config.py", line 19, in <module>
+    from dn3.configuratron.extensions import MoabbDataset
+  File "/home/hice1/rkrishnan72/.conda/envs/bendr-env/lib/python3.10/site-packages/dn3/configuratron/extensions.py", line 7, in <module>
+    'BNCI2014001': mbd.BNCI2014001,
+  File "/home/hice1/rkrishnan72/.conda/envs/bendr-env/lib/python3.10/site-packages/moabb/datasets/__init__.py", line 194, in __getattr__
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
+AttributeError: module 'moabb.datasets' has no attribute 'BNCI2014001'. Did you mean: 'BNCI2014_001'?

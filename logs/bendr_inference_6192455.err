@@ -1,0 +1,7 @@
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+  File "/home/hice1/rkrishnan72/projects/bendr-inference/BENDR/infer_smoke_test.py", line 15
+    from dn3_ext import BENDRClassificationimport collections
+                                                  ^^^^^^^^^^^
+SyntaxError: invalid syntax
